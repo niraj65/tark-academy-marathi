@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="mr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>तर्क Law Academy - MH CET Law Exam Preparation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandNavy: '#0B1E36',
+                        brandGold: '#C59B27',
+                        brandCream: '#FAF8F5',
+                        navyDark: '#061221',
+                        navyLight: '#163256'
+                    },
+                    fontFamily: {
+                        marathi: ['Noto Sans Devanagari', 'sans-serif'],
+                        serif: ['Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts for Devanagari -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background-color: #FAF8F5;
+            color: #1A202C;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #0B1E36 0%, #163256 100%);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brandGold selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 shadow-sm border-b border-amber-950/10 transition-all duration-300" style="background-color: #FAF8F5;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24 sm:h-28">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center space-x-3 group py-2">
+                    <img src="assets/tark-marathi-logo.png" 
+                         alt="तर्क Law Academy Logo" 
+                         class="h-16 sm:h-20 md:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                         onerror="this.onerror=null; this.src='assets/tark-logo.png';">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-brandNavy font-semibold hover:text-brandGold transition-colors">आमचे तत्त्वज्ञान</a>
+                    <a href="#exam-pattern" class="text-brandNavy font-semibold hover:text-brandGold transition-colors">परीक्षा स्वरूप</a>
+                    <a href="#syllabus" class="text-brandNavy font-semibold hover:text-brandGold transition-colors">अभ्यासक्रम</a>
+                    <a href="#batches" class="text-brandNavy font-semibold hover:text-brandGold transition-colors">बॅचची वेळ</a>
+                    <a href="#contact" class="bg-brandGold text-brandNavy font-bold px-6 py-3 rounded-xl shadow-md hover:bg-yellow-500 transition-all hover:shadow-lg">
+                        प्रवेश घ्या <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brandNavy hover:text-brandGold p-2 text-2xl focus:outline-none" aria-label="Toggle Navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-amber-950/10 px-4 pt-3 pb-6 space-y-3" style="background-color: #FAF8F5;">
+            <a href="#about" class="block py-2 text-brandNavy font-semibold hover:text-brandGold">आमचे तत्त्वज्ञान</a>
+            <a href="#exam-pattern" class="block py-2 text-brandNavy font-semibold hover:text-brandGold">परीक्षा स्वरूप</a>
+            <a href="#syllabus" class="block py-2 text-brandNavy font-semibold hover:text-brandGold">अभ्यासक्रम</a>
+            <a href="#batches" class="block py-2 text-brandNavy font-semibold hover:text-brandGold">बॅचची वेळ</a>
+            <a href="#contact" class="block text-center bg-brandGold text-brandNavy font-bold py-3 rounded-lg shadow">प्रवेश घ्या</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-16 lg:py-24 relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-brandGold opacity-10 blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-8 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-brandGold/20 text-brandGold border border-brandGold/40 px-4 py-1.5 rounded-full text-sm font-semibold">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>MH CET Law परीक्षेच्या यशाची खात्रीशीर पायरी</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+                        तर्क लॉ अकॅडमीमध्ये <br>
+                        <span class="text-brandGold">आपले सहर्ष स्वागत आहे</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-2xl leading-relaxed">
+                        ज्ञानाने प्रेरित. परिश्रमाने समृद्ध. MH CET Law परीक्षा उत्तीर्ण होण्यासाठी स्पष्ट संकल्पना, वैयक्तिक मार्गदर्शन आणि सातत्यपूर्ण सरावावर आधारित तयारी.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#contact" class="bg-brandGold text-brandNavy font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-yellow-500 transition-all text-center">
+                            प्रवेशासाठी संपर्क साधा <i class="fas fa-paper-plane ml-2"></i>
+                        </a>
+                        <a href="#exam-pattern" class="border-2 border-slate-400 text-white hover:border-brandGold hover:text-brandGold font-semibold px-6 py-4 rounded-xl transition-all text-center">
+                            परीक्षेची माहिती पाहा
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 text-center space-y-4">
+                    <div class="w-16 h-16 bg-brandGold text-brandNavy rounded-full flex items-center justify-center text-2xl mx-auto font-bold shadow-lg">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">ध्येय उच्च ठेवा!</h3>
+                    <p class="text-slate-200 text-sm">
+                        Government Law College (GLC), Mumbai <br>व ILS Law College, Pune मध्ये प्रवेश मिळवा.
+                    </p>
+                    <div class="pt-2 border-t border-white/20">
+                        <span class="text-xs uppercase tracking-wider text-brandGold font-semibold block">नवीन फाऊंडेशन बॅच</span>
+                        <span class="text-sm text-slate-300">मर्यादित जागा उपलब्ध</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Philosophy Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-brandNavy sm:text-4xl">आमचे अध्यापन तत्त्वज्ञान</h2>
+                <div class="w-20 h-1 bg-brandGold mx-auto my-4 rounded-full"></div>
+                <p class="text-slate-600">पाठांतराऐवजी संकल्पना समजून घेण्यावर आणि सातत्यपूर्ण परिश्रमांवर आमचा विश्वास आहे.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brandCream p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-brandNavy text-brandGold rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-3">सखोल कायदेशीर ज्ञान</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        केवळ गोखंपट्टी न करता कायद्याच्या चौकटींची प्रत्यक्ष व संकल्पनात्मक समज विकसित करण्यावर भर.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-brandCream p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-brandNavy text-brandGold rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-3">सातत्यपूर्ण कठोर परिश्रम</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        दररोज कायदेशीर वाचन, गतिशील विश्लेषण आणि विद्यार्थ्यांच्या समर्पणातून अभ्यासात सातत्य निर्माण करणे.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-brandCream p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-brandNavy text-brandGold rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-3">योग्य मार्गदर्शन</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        MH CET परीक्षेच्या स्पर्धात्मक आराखड्यानुसार प्रत्येक विद्यार्थ्याला वैयक्तिक समुपदेशन व मार्गदर्शन.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Pattern Section -->
+    <section id="exam-pattern" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-brandNavy sm:text-4xl">MH CET LAW: गुण व विषय रचना</h2>
+                <div class="w-20 h-1 bg-brandGold mx-auto my-4 rounded-full"></div>
+                <p class="text-slate-600">३-वर्षीय आणि ५-वर्षीय LL.B. प्रवेश परीक्षांचे गुणविभागणी स्वरूप</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- 3-Year LL.B. -->
+                <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
+                    <div class="bg-brandNavy text-white p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-bold">३-वर्षीय LL.B. प्रोग्राम</h3>
+                        <span class="bg-brandGold text-brandNavy font-extrabold px-3 py-1 rounded-full text-xs">एकूण: १२० गुण</span>
+                    </div>
+                    <div class="p-6">
+                        <ul class="divide-y divide-slate-100">
+                            <li class="py-3.5 flex justify-between items-center">
+                                <span class="font-medium text-slate-700"><i class="fas fa-gavel text-brandGold mr-2"></i>लीगल ॲप्टिट्यूड आणि रिझनिंग</span>
+                                <span class="font-bold text-brandNavy">२५ गुण</span>
+                            </li>
+                            <li class="py-3.5 flex justify-between items-center">
+                                <span class="font-medium text-slate-700"><i class="fas fa-globe text-brandGold mr-2"></i>सामान्य ज्ञान आणि चालू घडामोडी</span>
+                                <span class="font-bold text-brandNavy">३० गुण</span>
+                            </li>
+                            <li class="py-3.5 flex justify-between items-center">
+                                <span class="font-medium text-slate-700"><i class="fas fa-puzzle-piece text-brandGold mr-2"></i>लॉजिकल आणि ॲनालिटिकल रिझनिंग</span>
+                                <span class="font-bold text-brandNavy">२५ गुण</span>
+                            </li>
+                            <li class="py-3.5 flex justify-between items-center">
+                                <span class="font-medium text-slate-700"><i class="fas fa-book text-brandGold mr-2"></i>इंग्रजी आकलन (Comprehension)</span>
+                                <span class="font-bold text-brandNavy">४० गुण</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm p-3.5 rounded-xl font-semibold flex items-center">
+                            <i class="fas fa-check-circle mr-2 text-base"></i> नकारात्मक गुण पद्धती नाही (No Negative Marking)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5-Year Integrated LL.B. -->
+                <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
+                    <div class="bg-brandNavy text-white p-6 flex justify-between items-center">
+                        <h3 class="text-xl font-bold">५-वर्षीय इंटिग्रेटेड LL.B.</h3>
+                        <span class="bg-brandGold text-brandNavy font-extrabold px-3 py-1 rounded-full text-xs">एकूण: १२० गुण</span>
+                    </div>
+                    <div class="p-6">
+                        <ul class="divide-y divide-slate-100">
+                            <li class="py-3 flex justify-between items-center">
+                                <span class="font-medium text-slate-700"><i class="fas fa-gavel text-brandGold mr-2"></i>लीगल ॲप्टिट्यूड आणि रिझनिंग</span>
+                                <span class="font-bold text-brandNavy">३० गुण</span>
+                            </li>
+                            <li class="py-3 flex justify-between items-center">
+                                <span class="font-medium text-slate-700"><i class="fas fa-globe text-brandGold mr-2"></i>सामान्य ज्ञान आणि चालू घडामोडी</span>
+                                <span class="font-bold text-brandNavy">२५ गुण</span>
+                            </li>
+                            <li class="py-3 flex justify-between items-center">
+                                <span class="font-medium text-slate-700"><i class="fas fa-puzzle-piece text-brandGold mr-2"></i>लॉजिकल आणि ॲनालिटिकल रिझनिंग</span>
+                                <span class="font-bold text-brandNavy">३० गुण</span>
+                            </li>
+                            <li class="py-3 flex justify-between items-center">
+                                <span class="font-medium text-slate-700"><i class="fas fa-book text-brandGold mr-2"></i>इंग्रजी आकलन (Comprehension)</span>
+                                <span class="font-bold text-brandNavy">२५ गुण</span>
+                            </li>
+                            <li class="py-3 flex justify-between items-center">
+                                <span class="font-medium text-slate-700"><i class="fas fa-calculator text-brandGold mr-2"></i>गणितीय योग्यता (मूलभूत गणित)</span>
+                                <span class="font-bold text-brandNavy">१० गुण</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm p-3.5 rounded-xl font-semibold flex items-center">
+                            <i class="fas fa-check-circle mr-2 text-base"></i> नकारात्मक गुण पद्धती नाही (No Negative Marking)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Syllabus Section -->
+    <section id="syllabus" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-brandNavy sm:text-4xl">सविस्तर परीक्षेचा अभ्यासक्रम</h2>
+                <div class="w-20 h-1 bg-brandGold mx-auto my-4 rounded-full"></div>
+                <p class="text-slate-600">सर्व महत्त्वाचे घटक व विषयनिहाय गुणानुक्रम</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Legal Aptitude -->
+                <div class="border border-slate-200 rounded-2xl p-6 bg-brandCream hover:border-brandGold transition-all">
+                    <div class="text-brandGold text-3xl mb-4"><i class="fas fa-balance-scale-left"></i></div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-4">लीगल ॲप्टिट्यूड</h3>
+                    <ul class="space-y-2.5 text-sm text-slate-700">
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> टॉर्ट्स कायदा (Law of Torts)</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> भारतीय करार कायदा (Contracts Act)</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> फौजदारी कायदा (Criminal Law)</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> भारतीय संविधान आणि राज्यशास्त्र</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> कायदेशीर म्हणी व संज्ञा (Maxims)</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> कायदेशीर युक्तिवाद आणि पूर्वोदाहरणे</li>
+                    </ul>
+                </div>
+
+                <!-- Logical & GK -->
+                <div class="border border-slate-200 rounded-2xl p-6 bg-brandCream hover:border-brandGold transition-all">
+                    <div class="text-brandGold text-3xl mb-4"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-4">लॉजिकल तर्क व सामान्य ज्ञान</h3>
+                    <ul class="space-y-2.5 text-sm text-slate-700">
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> सिलॉजिझम आणि नातेसंबंध</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> कोडिंग-डिकोडिंग आणि मालिका</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> इतिहास, भूगोल व अर्थशास्त्र</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> नागरिकशास्त्र (Static Civics)</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> दैनिक चालू घडामोडी</li>
+                    </ul>
+                </div>
+
+                <!-- English & Maths -->
+                <div class="border border-slate-200 rounded-2xl p-6 bg-brandCream hover:border-brandGold transition-all">
+                    <div class="text-brandGold text-3xl mb-4"><i class="fas fa-square-root-variable"></i></div>
+                    <h3 class="text-xl font-bold text-brandNavy mb-4">इंग्रजी आणि गणित</h3>
+                    <ul class="space-y-2.5 text-sm text-slate-700">
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> शब्दसंग्रह (Vocabulary, Synonyms)</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> म्हणी आणि वाक्प्रचार (Idioms)</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> उतारा आकलन (Reading Comprehension)</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> नफा-तोटा व शेकडेवारी (५-वर्षीय)</li>
+                        <li class="flex items-center"><i class="fas fa-chevron-right text-brandGold text-xs mr-2"></i> वेग/वेळ आणि सरासरी</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Batch Information -->
+    <section id="batches" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-brandNavy sm:text-4xl">बॅचची वेळ व माहिती</h2>
+                <div class="w-20 h-1 bg-brandGold mx-auto my-4 rounded-full"></div>
+                <p class="text-slate-600">तुमच्या वेळेनुसार नियमित व वीकेंड बॅचेस उपलब्ध</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Regular Batch -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-brandNavy">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-bold text-brandNavy">नियमित रोजच्या बॅचेस</h3>
+                        <span class="bg-brandNavy text-white text-xs font-bold px-3 py-1 rounded-full">सोमवार ते शुक्रवार</span>
+                    </div>
+                    <ul class="space-y-4 text-slate-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-brandGold mt-1 mr-3"></i>
+                            <div>
+                                <strong>वेळ:</strong> सकाळी व संध्याकाळी स्वतंत्र वेळ स्लॉट्स उपलब्ध.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chart-line text-brandGold mt-1 mr-3"></i>
+                            <div>
+                                <strong>अभ्यासक्रम:</strong> दररोज सखोल व सातत्यपूर्ण मार्गदर्शन.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-file-signature text-brandGold mt-1 mr-3"></i>
+                            <div>
+                                <strong>चाचणी:</strong> प्रत्येक शुक्रवारी संकल्पना चाचणी (Weekly Checkpoint).
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Weekend Batch -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-brandGold">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-bold text-brandNavy">वीकेंड मास्टर बॅच</h3>
+                        <span class="bg-brandGold text-brandNavy text-xs font-bold px-3 py-1 rounded-full">शनिवार व रविवार</span>
+                    </div>
+                    <ul class="space-y-4 text-slate-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-user-graduate text-brandGold mt-1 mr-3"></i>
+                            <div>
+                                <strong>कोणासाठी:</strong> महाविद्यालयीन विद्यार्थी आणि नोकरदार व्यक्तींसाठी उपयुक्त.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chalkboard-teacher text-brandGold mt-1 mr-3"></i>
+                            <div>
+                                <strong>स्वरूप:</strong> महत्त्वाच्या विषयांवर सखोल मॅरेथॉन व्याख्याने.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-laptop-code text-brandGold mt-1 mr-3"></i>
+                            <div>
+                                <strong>चाचणी:</strong> परिपूर्ण सराव मॉक टेस्ट पोर्टलचा ॲक्सेस.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Enquiry Section -->
+    <section id="contact" class="py-16 hero-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <h2 class="text-3xl font-extrabold sm:text-4xl">आजच आपल्या उज्ज्वल भविष्याची सुरुवात करा</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        तर्क लॉ अकॅडमीमध्ये प्रवेश मर्यादित आहेत. योग्य मार्गदर्शन व सर्वोत्तम तयारीसाठी आजच संपर्क साधा किंवा चौकशी फॉर्म भरा.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-brandGold/20 text-brandGold rounded-xl flex items-center justify-center text-xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-400">कार्यालय पत्ता</h4>
+                                <p class="text-white font-medium">तर्क लॉ अकॅडमी, महाराष्ट्र</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-brandGold/20 text-brandGold rounded-xl flex items-center justify-center text-xl">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-400">फोन / WhatsApp</h4>
+                                <p class="text-white font-medium">+91 XXXXXXXXXX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <form id="enquiry-form" class="bg-white text-slate-800 p-8 rounded-2xl shadow-2xl space-y-4">
+                        <h3 class="text-2xl font-bold text-brandNavy mb-2">प्रवेश चौकशी फॉर्म</h3>
+                        <p class="text-xs text-slate-500 mb-4">खालील माहिती भरा, आमची टीम तुम्हाला लवकरच संपर्क करेल.</p>
+                        
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">पूर्ण नाव</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brandGold focus:outline-none" placeholder="तुमचे नाव प्रविष्ट करा">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">मोबाईल क्रमांक</label>
+                                <input type="tel" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brandGold focus:outline-none" placeholder="१० अंकी नंबर">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">कोर्स निवडा</label>
+                                <select class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brandGold focus:outline-none">
+                                    <option>3-Year LL.B.</option>
+                                    <option>5-Year Integrated LL.B.</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">संदेश (पर्यायी)</label>
+                            <textarea rows="3" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brandGold focus:outline-none" placeholder="तुमचे प्रश्न लिहा..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brandGold text-brandNavy font-extrabold py-4 rounded-lg shadow hover:bg-yellow-500 transition-all text-lg">
+                            माहिती पाठवा <i class="fas fa-paper-plane ml-1"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navyDark text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <!-- <a href="#" class="inline-block">
+                <img src="assets/tark-marathi-logo.png" 
+                     alt="तर्क Law Academy Logo" 
+                     class="h-20 sm:h-24 w-auto object-contain mx-auto"
+                     onerror="this.onerror=null; this.src='assets/tark-logo.png';">
+            </a> -->
+            <p class="text-sm max-w-md mx-auto">
+                तर्क, कायदा आणि न्यायाच्या सखोल अभ्यासासाठी महाराष्ट्रातील अग्रेसर संस्था.
+            </p>
+            <div class="pt-6 border-t border-slate-800 text-xs">
+                &copy; 2026 TARK Law Academy. सर्वाधिकार सुरक्षित.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        // Mobile Navigation Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Enquiry Form Submission Handler
+        document.getElementById('enquiry-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('धन्यवाद! तुमची चौकशी प्राप्त झाली आहे. आमची टीम तुमच्याशी लवकरच संपर्क साधेल.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
